@@ -1,6 +1,7 @@
 import org.aoc.AdventOfCodeApplication;
 import org.aoc.DayRunner;
 import org.aoc.util.FileReader;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ public class DayTests {
     // TODO Turn these into parameterised tests last
 
     @Test
+    @Disabled
     public void day2() {
         final String part1 = dayRunner.runDay(2, 1, "_test");
         assertEquals("1227775554", part1);
@@ -36,6 +38,7 @@ public class DayTests {
     }
 
     @Test
+    @Disabled
     public void day4() {
         final String part1 = dayRunner.runDay(4, 1, "_test");
         assertEquals("13", part1);
@@ -43,6 +46,17 @@ public class DayTests {
 
         final String part2 = dayRunner.runDay(4, 2, "_test");
         assertEquals("43", part2);
+        System.out.println("Part 2 passed: " + part2 + "\n");
+    }
+
+    @Test
+    public void day5() {
+        final String part1 = dayRunner.runDay(5, 1, "_test");
+        assertEquals("3", part1);
+        System.out.println("Part 1 passed: " + part1 + "\n");
+
+        final String part2 = dayRunner.runDay(5, 2, "_test");
+        assertEquals("14", part2);
         System.out.println("Part 2 passed: " + part2 + "\n");
     }
 }

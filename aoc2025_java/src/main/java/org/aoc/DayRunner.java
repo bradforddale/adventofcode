@@ -21,7 +21,7 @@ public class DayRunner {
                      final Day2 day2,
                      final Day3 day3,
                      final Day4 day4,
-//                     final Day5 day5,
+                     final Day5 day5,
 //                     final Day6 day6,
 //                     final Day7 day7,
 //                     final Day8 day8,
@@ -34,7 +34,7 @@ public class DayRunner {
         dayMap.put(2, day2);
         dayMap.put(3, day3);
         dayMap.put(4, day4);
-//        dayMap.put(5, day5);
+        dayMap.put(5, day5);
 //        dayMap.put(6, day6);
 //        dayMap.put(7, day7);
 //        dayMap.put(8, day8);
