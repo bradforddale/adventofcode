@@ -24,7 +24,7 @@ public class AdventOfCodeApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        final String result = dayRunner.runDay(5, 2);
+        final String result = dayRunner.runDay(3, 2);
         System.out.println("=====================================");
         System.out.println("FINAL RESULT: " + result);
         System.out.println("=====================================");

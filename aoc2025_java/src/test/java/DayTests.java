@@ -38,6 +38,17 @@ public class DayTests {
     }
 
     @Test
+    public void day3() {
+        final String part1 = dayRunner.runDay(3, 1, "_test");
+        assertEquals("357", part1);
+        System.out.println("Part 1 passed: " + part1 + "\n");
+
+        final String part2 = dayRunner.runDay(3, 2, "_test");
+        assertEquals("3121910778619", part2);
+        System.out.println("Part 2 passed: " + part2 + "\n");
+    }
+
+    @Test
     @Disabled
     public void day4() {
         final String part1 = dayRunner.runDay(4, 1, "_test");
@@ -50,6 +61,7 @@ public class DayTests {
     }
 
     @Test
+    @Disabled
     public void day5() {
         final String part1 = dayRunner.runDay(5, 1, "_test");
         assertEquals("3", part1);
